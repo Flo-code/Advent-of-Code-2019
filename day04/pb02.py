@@ -1,3 +1,4 @@
+# this is a comment
 def counter_password(start, end):
     nb_password = 0
 
