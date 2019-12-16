@@ -1,3 +1,7 @@
+import os
+from utils import read_data
+
+
 def compute_fuel(mass):
     val = 0
     if mass // 3 > 2:
@@ -13,13 +17,10 @@ def compute_total_fuel(tab):
 
 
 def test():
-    data_file = open("day01/data.txt", "r")
-    tab = []
-    for ligne in data_file:
-        tab.append(int(ligne))
-    data_file.close()
+    tab = read_data(os.path.join(os.path.dirname(__file__), "data.txt"))
 
     return compute_total_fuel(tab)
 
 
-print(test())
+if __name__ == "__main__":
+    print(test())
