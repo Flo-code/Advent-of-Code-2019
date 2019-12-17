@@ -20,8 +20,8 @@ def count_password(start, end):
         if increasing and double:
             nb_password += 1
 
-    print(nb_password)
+    return(nb_password)
 
 
-count_password(256310, 732736)
+print(count_password(256310, 732736))
 

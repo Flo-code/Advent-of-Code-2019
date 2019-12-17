@@ -36,7 +36,7 @@ def check_ascending(n):
 
 
 def check_repeat(n):
-    for digit1, digit2 in zip(n[1:],n): 
+    for digit1, digit2 in zip(n, n[1:]): 
         if digit1 == digit2:
             return True
             
